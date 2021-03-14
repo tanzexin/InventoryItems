@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace Zhaoxi.MSACommerce.StockMicroservice
 {
-    public class mtes
+    public class TextDome
     {
-        public string name { get; set; }
+        public string Name { get; set; }
     }
 }
