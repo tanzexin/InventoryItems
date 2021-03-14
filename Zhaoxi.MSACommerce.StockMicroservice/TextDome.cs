@@ -8,5 +8,6 @@ namespace Zhaoxi.MSACommerce.StockMicroservice
     public class TextDome
     {
         public string Name { get; set; }
+        public string Age { get; set; }
     }
 }
