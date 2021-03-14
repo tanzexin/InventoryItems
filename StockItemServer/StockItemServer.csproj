@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StockItemInterface\StockItemInterface.csproj" />
+    <ProjectReference Include="..\StockModel\StockModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Zhaoxi.AgileFramework.Common">
+      <HintPath>Library\Zhaoxi.AgileFramework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Zhaoxi.AgileFramework.Core">
+      <HintPath>Library\Zhaoxi.AgileFramework.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

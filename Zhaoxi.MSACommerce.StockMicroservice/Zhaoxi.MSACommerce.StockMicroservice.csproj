@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>04063ae6-ac1f-4a8f-bf38-c39e5aa7acd5</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Com.Ctrip.Framework.Apollo.Configuration" Version="2.4.1" />
+    <PackageReference Include="DotNetCore.CAP" Version="5.0.0-preview-131679580" />
+    <PackageReference Include="DotNetCore.CAP.Dashboard" Version="5.0.0-preview-131679580" />
+    <PackageReference Include="DotNetCore.CAP.MySql" Version="5.0.0-preview-131679580" />
+    <PackageReference Include="DotNetCore.CAP.RabbitMQ" Version="5.0.0-preview-131679580" />
+    <PackageReference Include="Grpc.Core.Api" Version="2.36.1" />
+    <PackageReference Include="log4net.Kafka.Core" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StockItemInterface\StockItemInterface.csproj" />
+    <ProjectReference Include="..\StockItemServer\StockItemServer.csproj" />
+    <ProjectReference Include="..\StockModel\StockModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>Library\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>Library\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>Library\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>Library\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>Library\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="Zhaoxi.AgileFramework.Common">
+      <HintPath>Library\Zhaoxi.AgileFramework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Zhaoxi.AgileFramework.Core">
+      <HintPath>Library\Zhaoxi.AgileFramework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zhaoxi.AgileFramework.WebCore">
+      <HintPath>Library\Zhaoxi.AgileFramework.WebCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Zhaoxi.AgileFramework.WechatPayCore">
+      <HintPath>Library\Zhaoxi.AgileFramework.WechatPayCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
